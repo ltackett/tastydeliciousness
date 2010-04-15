@@ -1,0 +1,10 @@
+body h1, body p {
+  color: red;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal; }
+body p, body a {
+  color: #303030; }
+body a:hover {
+  color: #010101; }
