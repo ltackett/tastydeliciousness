@@ -1,0 +1,7 @@
+=flex-box($orient:horizontal,$align:stretch,$direction:normal,$flex:1)
+  +display-box
+  +box-orient($orient)
+  +box-align($align)
+  +box-direction($direction)
+  & > *
+    +box-flex($flex)

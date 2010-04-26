@@ -1,10 +1,87 @@
-body h1, body p {
-  color: red;
-  padding-top: 50px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: normal; }
-body p, body a {
-  color: #303030; }
-body a:hover {
-  color: #010101; }
+/* line 13, ../../compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* line 16, ../../compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+*:focus {
+  outline: 0; }
+
+/* line 18, ../../compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+/* line 20, ../../compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+/* line 23, ../../compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+/* line 25, ../../compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 27, ../../compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+q, blockquote {
+  quotes: "" ""; }
+  /* line 89, ../../compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: ""; }
+
+/* line 29, ../../compass/frameworks/compass/stylesheets/compass/utilities/general/_reset.scss */
+a img {
+  border: none; }
+
+/* line 6, ../sass/screen.sass */
+html, html body {
+  width: 100%;
+  height: 100%; }
+
+/* line 10, ../sass/screen.sass */
+.box, .link-box {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  height: 100%;
+  width: 100%; }
+
+/* line 17, ../sass/screen.sass */
+.link-box {
+  height: 300px;
+  width: auto; }
+  /* line 22, ../sass/screen.sass */
+  .link-box a {
+    border-right: 3px solid black;
+    padding: 20px; }
+    /* line 25, ../sass/screen.sass */
+    .link-box a:last-child {
+      border-right: none; }
