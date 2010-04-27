@@ -103,40 +103,45 @@ p {
 
 /* line 43, ../sass/screen.sass */
 a {
-  border-top-right-radius: 3em;
-  -moz-border-radius-topright: 3em;
-  -webkit-border-top-right-radius: 3em;
-  -moz-border-radius-topright: 3em;
-  -webkit-border-top-right-radius: 3em;
-  border-top-right-radius: 3em;
-  border-bottom-right-radius: 3em;
-  -moz-border-radius-bottomright: 3em;
-  -webkit-border-bottom-right-radius: 3em;
-  -moz-border-radius-bottomright: 3em;
-  -webkit-border-bottom-right-radius: 3em;
-  border-bottom-right-radius: 3em;
   -moz-transition-property: all;
   -webkit-transition-property: all;
   transition-property: all;
-  -moz-transition-duration: 0.1s;
-  -webkit-transition-duration: 0.1s;
-  transition-duration: 0.1s;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -moz-transition-timing-function: ease-in-out;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
+  border-top-left-radius: 1em;
+  -moz-border-radius-topleft: 1em;
+  -webkit-border-top-left-radius: 1em;
+  -moz-border-radius-topleft: 1em;
+  -webkit-border-top-left-radius: 1em;
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  -moz-border-radius-bottomright: 1em;
+  -webkit-border-bottom-right-radius: 1em;
+  -moz-border-radius-bottomright: 1em;
+  -webkit-border-bottom-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  display: block;
   color: #303030;
-  border-right: 2px solid #dddddd;
-  padding: 2em 0.75em;
+  padding: 0.75em;
   vertical-align: 0;
   text-decoration: none; }
-  /* line 51, ../sass/screen.sass */
+  /* line 53, ../sass/screen.sass */
   a:last-child {
     border-right: none; }
-  /* line 53, ../sass/screen.sass */
+  /* line 55, ../sass/screen.sass */
   a:hover {
     color: #8b0006;
+    background-color: #acebb4;
     text-decoration: underline;
-    font-size: 2em;
+    margin: 0 20px;
+    padding-right: 85px;
     font-weight: bold;
     font-style: italic;
     font-family: georgia, times, "times new roman", serif; }

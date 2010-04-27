@@ -37,24 +37,28 @@ p
   margin-left: 0.5em
   font-style: italic
   
-$animation-speed = "0.1s"
+$animation-speed = "0.3s"
 $animation-ease = "ease-in-out"
 
 a
-  +border-right-radius(3em)
   +transition(all, $animation-speed, $animation-ease)
+  +border-top-left-radius(1em)
+  +border-bottom-right-radius(1em)
+  +box-flex(1)
+  display: block
   color: #303030
-  border-right: 2px solid #ddd
-  padding: 2em 0.75em
+  padding: 0.75em
   vertical-align: 0
   text-decoration: none
   &:last-child
     border-right: none
   &:hover
     color: #8B0006
+    background-color: #ACEBB4
     text-decoration: underline
+    margin: 0 20px
+    padding-right: 85px
     font:
-      size: 2em
       weight: bold
       style: italic
       family: georgia, times, "times new roman", serif
