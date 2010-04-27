@@ -77,16 +77,15 @@ html, html body {
 
 /* line 18, ../sass/screen.sass */
 .link-box {
-  height: 200px;
-  width: auto; }
+  height: 200px; }
 
-/* line 23, ../sass/screen.sass */
+/* line 22, ../sass/screen.sass */
 h1, p {
   -moz-transform: scale(1.5) rotate(-5deg);
   -webkit-transform: scale(1.5) rotate(-5deg);
   transform: scale(1.5) rotate(-5deg); }
 
-/* line 26, ../sass/screen.sass */
+/* line 25, ../sass/screen.sass */
 h1 {
   text-shadow: -0.04em 0.04em 0.04em rgba(0, 0, 0, 0.8);
   font-family: georgia, times, "times new roman", serif;
@@ -97,12 +96,12 @@ h1 {
   font-weight: bold;
   font-style: italic; }
 
-/* line 37, ../sass/screen.sass */
+/* line 36, ../sass/screen.sass */
 p {
   margin-left: 0.5em;
   font-style: italic; }
 
-/* line 44, ../sass/screen.sass */
+/* line 43, ../sass/screen.sass */
 a {
   border-top-right-radius: 3em;
   -moz-border-radius-topright: 3em;
@@ -130,10 +129,10 @@ a {
   padding: 2em 0.75em;
   vertical-align: 0;
   text-decoration: none; }
-  /* line 52, ../sass/screen.sass */
+  /* line 51, ../sass/screen.sass */
   a:last-child {
     border-right: none; }
-  /* line 54, ../sass/screen.sass */
+  /* line 53, ../sass/screen.sass */
   a:hover {
     color: #8b0006;
     text-decoration: underline;
