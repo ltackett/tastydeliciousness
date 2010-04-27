@@ -14,6 +14,11 @@ html, html body
   +box-pack(center)
   height: 100%
   width: 100%
+  
+.link-box
+  @extend .box
+  height: 200px
+  width: auto
 
 h1, p
   +apply-transform(scale(1.5) rotate(-5deg))
@@ -33,29 +38,24 @@ p
   margin-left: 0.5em
   font-style: italic
   
-.link-box
-  @extend .box
-  height: 200px
-  width: auto
-  
-  $animation-speed = "0.1s"
-  $animation-ease = "ease-in-out"
-  
-  a
-    +border-right-radius(3em)
-    +transition(all, $animation-speed, $animation-ease)
-    color: #303030
-    border-right: 2px solid #ddd
-    padding: 2em 0.75em
-    vertical-align: 0
-    text-decoration: none
-    &:last-child
-      border-right: none
-    &:hover
-      color: #8B0006
-      text-decoration: underline
-      font:
-        size: 2em
-        weight: bold
-        style: italic
-        family: georgia, times, "times new roman", serif
+$animation-speed = "0.1s"
+$animation-ease = "ease-in-out"
+
+a
+  +border-right-radius(3em)
+  +transition(all, $animation-speed, $animation-ease)
+  color: #303030
+  border-right: 2px solid #ddd
+  padding: 2em 0.75em
+  vertical-align: 0
+  text-decoration: none
+  &:last-child
+    border-right: none
+  &:hover
+    color: #8B0006
+    text-decoration: underline
+    font:
+      size: 2em
+      weight: bold
+      style: italic
+      family: georgia, times, "times new roman", serif

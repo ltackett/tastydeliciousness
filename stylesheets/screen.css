@@ -76,12 +76,17 @@ html, html body {
   width: 100%; }
 
 /* line 18, ../sass/screen.sass */
+.link-box {
+  height: 200px;
+  width: auto; }
+
+/* line 23, ../sass/screen.sass */
 h1, p {
   -moz-transform: scale(1.5) rotate(-5deg);
   -webkit-transform: scale(1.5) rotate(-5deg);
   transform: scale(1.5) rotate(-5deg); }
 
-/* line 21, ../sass/screen.sass */
+/* line 26, ../sass/screen.sass */
 h1 {
   text-shadow: -0.04em 0.04em 0.04em rgba(0, 0, 0, 0.8);
   font-family: georgia, times, "times new roman", serif;
@@ -92,51 +97,47 @@ h1 {
   font-weight: bold;
   font-style: italic; }
 
-/* line 32, ../sass/screen.sass */
+/* line 37, ../sass/screen.sass */
 p {
   margin-left: 0.5em;
   font-style: italic; }
 
-/* line 36, ../sass/screen.sass */
-.link-box {
-  height: 200px;
-  width: auto; }
-  /* line 44, ../sass/screen.sass */
-  .link-box a {
-    border-top-right-radius: 3em;
-    -moz-border-radius-topright: 3em;
-    -webkit-border-top-right-radius: 3em;
-    -moz-border-radius-topright: 3em;
-    -webkit-border-top-right-radius: 3em;
-    border-top-right-radius: 3em;
-    border-bottom-right-radius: 3em;
-    -moz-border-radius-bottomright: 3em;
-    -webkit-border-bottom-right-radius: 3em;
-    -moz-border-radius-bottomright: 3em;
-    -webkit-border-bottom-right-radius: 3em;
-    border-bottom-right-radius: 3em;
-    -moz-transition-property: all;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -moz-transition-duration: 0.1s;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    -moz-transition-timing-function: ease-in-out;
-    -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-    color: #303030;
-    border-right: 2px solid #dddddd;
-    padding: 2em 0.75em;
-    vertical-align: 0;
-    text-decoration: none; }
-    /* line 52, ../sass/screen.sass */
-    .link-box a:last-child {
-      border-right: none; }
-    /* line 54, ../sass/screen.sass */
-    .link-box a:hover {
-      color: #8b0006;
-      text-decoration: underline;
-      font-size: 2em;
-      font-weight: bold;
-      font-style: italic;
-      font-family: georgia, times, "times new roman", serif; }
+/* line 44, ../sass/screen.sass */
+a {
+  border-top-right-radius: 3em;
+  -moz-border-radius-topright: 3em;
+  -webkit-border-top-right-radius: 3em;
+  -moz-border-radius-topright: 3em;
+  -webkit-border-top-right-radius: 3em;
+  border-top-right-radius: 3em;
+  border-bottom-right-radius: 3em;
+  -moz-border-radius-bottomright: 3em;
+  -webkit-border-bottom-right-radius: 3em;
+  -moz-border-radius-bottomright: 3em;
+  -webkit-border-bottom-right-radius: 3em;
+  border-bottom-right-radius: 3em;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  color: #303030;
+  border-right: 2px solid #dddddd;
+  padding: 2em 0.75em;
+  vertical-align: 0;
+  text-decoration: none; }
+  /* line 52, ../sass/screen.sass */
+  a:last-child {
+    border-right: none; }
+  /* line 54, ../sass/screen.sass */
+  a:hover {
+    color: #8b0006;
+    text-decoration: underline;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: georgia, times, "times new roman", serif; }
