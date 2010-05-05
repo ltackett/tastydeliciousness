@@ -437,12 +437,17 @@ a.base, #wrapper #content a, #footer a {
     margin-top: 0;
     border: none; }
 
-/* line 151, ../sass/screen.sass */
-#content .primary-column > .block,
-#content .secondary-column > .block {
-  padding-top: 1.5em; }
+/* line 148, ../sass/screen.sass */
+#content {
+  background: url(../images/masthead.png) 0 0 no-repeat;
+  margin-top: 1.5em;
+  padding-top: 315px; }
+  /* line 154, ../sass/screen.sass */
+  #content .primary-column > .block,
+  #content .secondary-column > .block {
+    padding-top: 1.5em; }
 
-/* line 157, ../sass/screen.sass */
+/* line 160, ../sass/screen.sass */
 #footer {
   width: 950px;
   margin: 0 auto;
