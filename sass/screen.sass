@@ -6,33 +6,53 @@
 
 +blueprint-typography("#content")
 
+// page defaults
+// --------------------------------------------------------
+
 html, html body
   font-family: "Helvetica Neue", helvetica, arial, sans-serif
 
 body
   background: url(../images/mesh.png) #121212
+  
+a.base
+  color: #99201E
+  text-decoration: none
+  &:hover
+    text-decoration: underline
 
 #wrapper
   +container
-  +box-shadow(0, 0, 100px, rgba(0,0,0,1))
+  +box-shadow(0, 0, 10px, rgba(0,0,0,1))
   +border-bottom-radius(0.5em)
   border: 1px solid #222
   background: url(../images/fabric.png) #111
   padding-bottom: 2em
   
   #content
-    color: #DDEA8C
+    overflow: hidden
+    color: #CFD79E
     font-size: 90%
+    
+    h1, h2, h3, h4, h5, h6
+      +text-shadow(-2px, 2px, 20px, rgba(255,100,100,0.5))
+      color: #852725
+    
+    a
+      @extend a.base
+  
+// Link box
+// --------------------------------------------------------
 
-.box
+.link-box
   +display-box
   height: 100%
   width: 100%
-  
-.link-box
-  @extend .box
   margin-top: 3.8em
-  
+
+// Header
+// --------------------------------------------------------
+
 #header
   +clearfix
 
@@ -118,3 +138,24 @@ $animation-ease = "ease-in-out"
         bottom: 0
         top: 0
       border: none
+
+// Columns
+// --------------------------------------------------------
+
+#content
+  .primary-column,
+  .secondary-column
+    > .block
+      padding-top: 1.5em
+
+// Footer
+// --------------------------------------------------------
+
+#footer
+  +container
+  margin: 2em auto
+  color: #666
+  font-size: 80%
+  line-height: 2em
+  a
+    @extend a.base
