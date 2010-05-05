@@ -22,6 +22,11 @@ imgs: images/sauce
         // Make with the jQuery
         
         $(document).ready(function(){
+            
+            $('a[@rel$='external']').click(function(){
+                this.target = "_blank";
+            });
+            
             $('.link-box a').hover(function(){
                 $('.link-box a').not(this).toggleClass('not-hover');
             });
