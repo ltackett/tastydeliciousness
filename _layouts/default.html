@@ -23,7 +23,7 @@ imgs: images/sauce
         
         $(document).ready(function(){
             
-            $('a[@rel$='external']').click(function(){
+            $('a[rel=external]').click(function(){
                 this.target = "_blank";
             });
             
@@ -87,7 +87,7 @@ imgs: images/sauce
     </div>
 
     <div id="footer">
-        <p>This page is awesome, because <a href="http://twitter.com/ltackett">Lorin Tackett</a> is awesome.</p>
+        <p>This page is awesome, because <a href="http://twitter.com/ltackett" rel="external">Lorin Tackett</a> is awesome.</p>
     </div>
 
 </body>
