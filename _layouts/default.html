@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" charset="utf-8" />
+    <script type="text/javascript" src="javascripts/modernizr.min.js"></script>
+    
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.4.2");
+        // google.load("jqueryui", "1.8.1");
+        google.load("chrome-frame", "1.0.2");
+    </script>
+    
+    <script type="text/javascript">
+        // Make with the jQuery
+        
+        $(document).ready(function(){
+            $('.link-box a').hover(function(){
+                $('.link-box a').not(this).toggleClass('not-hover');
+            });
+        });
+    </script>
+
+	<title>{{ page.title }} - Ferrrrrocious.</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            
+            <div class="secondary-column">
+                <div id="logo">
+                    <div id="inner-logo">
+                        <h1>Tastydelicious.</h1>
+                        <p>This Foo Bar tastes like Baz.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="primary-column">
+                <div class="block">
+                    <div class="link-box">
+                        <a href="projects.html">projects</a>
+                        <a href="http://github.com/ltackett" rel="external">github</a>
+                        <a href="http://twitter.com/ltackett" rel="external">twitter</a>
+                        <a href="http://facebook.com/ltackett" rel="external">facebook</a>
+                        <a href="http://lorintackett.com" rel="external">portfolio</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div id="content">
+            
+            <div class="primary-column">
+                <div class="block">
+                    <h2>{{ page.title }}</h2>
+                    {{ content }}
+                </div>
+            </div>
+            
+            <div class="secondary-column">
+                <div class="block">
+                    <ul>
+                        <li>uno</li>
+                        <li>dos</li>
+                        <li>tres</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
