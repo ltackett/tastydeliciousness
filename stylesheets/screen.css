@@ -326,14 +326,17 @@ a.base, #wrapper #content a, #footer a {
   /* line 72, ../sass/screen.sass */
   #logo h1 {
     text-shadow: -0.04em 0.04em 0.04em rgba(255, 100, 100, 0.8);
-    color: white;
     letter-spacing: -0.07em;
     margin-bottom: 0;
     font-family: georgia, times, "times new roman", serif;
     font-size: 4em;
     font-weight: bold;
     font-style: italic; }
-  /* line 83, ../sass/screen.sass */
+    /* line 81, ../sass/screen.sass */
+    #logo h1 a {
+      color: white;
+      text-decoration: none; }
+  /* line 85, ../sass/screen.sass */
   #logo p {
     color: black;
     margin-left: 9em;
@@ -341,7 +344,7 @@ a.base, #wrapper #content a, #footer a {
     font-style: italic;
     font-weight: bold; }
 
-/* line 96, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 .link-box a {
   -moz-transition-property: all;
   -webkit-transition-property: all;
@@ -387,19 +390,19 @@ a.base, #wrapper #content a, #footer a {
   background-color: #222222;
   background-attachment: fixed;
   white-space: nowrap; }
-  /* line 111, ../sass/screen.sass */
+  /* line 113, ../sass/screen.sass */
   .link-box a[rel="external"]:after {
     content: " »"; }
-  /* line 113, ../sass/screen.sass */
+  /* line 115, ../sass/screen.sass */
   .link-box a:hover {
     color: white;
     background-color: #8b0006;
     padding-right: 85px; }
-  /* line 117, ../sass/screen.sass */
+  /* line 119, ../sass/screen.sass */
   .link-box a:last-child, .link-box a:last-child:hover {
     margin-right: 0; }
 
-/* line 123, ../sass/screen.sass */
+/* line 125, ../sass/screen.sass */
 .primary-column {
   display: inline;
   float: left;
@@ -411,7 +414,7 @@ a.base, #wrapper #content a, #footer a {
   * html .primary-column {
     overflow-x: hidden; }
 
-/* line 127, ../sass/screen.sass */
+/* line 129, ../sass/screen.sass */
 .secondary-column {
   display: inline;
   float: left;
@@ -421,24 +424,24 @@ a.base, #wrapper #content a, #footer a {
   * html .secondary-column {
     overflow-x: hidden; }
 
-/* line 132, ../sass/screen.sass */
+/* line 134, ../sass/screen.sass */
 .primary-column .block,
 .secondary-column .block {
   margin: 2em;
   border-top: 2px solid #222222; }
-  /* line 136, ../sass/screen.sass */
+  /* line 138, ../sass/screen.sass */
   #header .primary-column .block, #header
   .secondary-column .block {
     margin-bottom: 0;
     margin-top: 0;
     border: none; }
 
-/* line 148, ../sass/screen.sass */
+/* line 150, ../sass/screen.sass */
 #content .primary-column > .block,
 #content .secondary-column > .block {
   padding-top: 1.5em; }
 
-/* line 154, ../sass/screen.sass */
+/* line 156, ../sass/screen.sass */
 #footer {
   width: 950px;
   margin: 0 auto;
