@@ -276,17 +276,18 @@ a.base, #wrapper #content a, #footer a {
   display: box;
   height: 100%;
   width: 100%;
-  margin-top: 3.8em; }
+  margin-top: 2.8em; }
 
 /* line 56, ../sass/screen.sass */
 #header {
   overflow: hidden;
-  display: inline-block; }
+  display: inline-block;
+  background: url(../images/grunge_corner.png) 5px -70px no-repeat, url(../images/grunge_corner.png) 230px -70px no-repeat; }
   /* line 8, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
   #header {
     display: block; }
 
-/* line 59, ../sass/screen.sass */
+/* line 60, ../sass/screen.sass */
 #logo {
   border-bottom-left-radius: 0.4em;
   -moz-border-radius-bottomleft: 0.4em;
@@ -309,7 +310,7 @@ a.base, #wrapper #content a, #footer a {
   padding-top: 1em;
   margin: 0 2em;
   background: url(../images/fabric.png) #8b0006; }
-  /* line 64, ../sass/screen.sass */
+  /* line 65, ../sass/screen.sass */
   #logo #inner-logo {
     -moz-transform-origin: 20% 50%;
     -webkit-transform-origin: 20% 50%;
@@ -320,10 +321,10 @@ a.base, #wrapper #content a, #footer a {
     -o-transform: scale(0.5) rotate(-5deg);
     transform: scale(0.5) rotate(-5deg);
     width: 28em; }
-    /* line 68, ../sass/screen.sass */
+    /* line 69, ../sass/screen.sass */
     .csstransforms #logo #inner-logo {
       margin-left: -2em; }
-  /* line 72, ../sass/screen.sass */
+  /* line 73, ../sass/screen.sass */
   #logo h1 {
     text-shadow: -0.04em 0.04em 0.04em rgba(255, 100, 100, 0.8);
     letter-spacing: -0.07em;
@@ -332,19 +333,19 @@ a.base, #wrapper #content a, #footer a {
     font-size: 4em;
     font-weight: bold;
     font-style: italic; }
-    /* line 81, ../sass/screen.sass */
+    /* line 82, ../sass/screen.sass */
     #logo h1 a {
       color: white;
       text-decoration: none; }
-  /* line 85, ../sass/screen.sass */
+  /* line 86, ../sass/screen.sass */
   #logo p {
     color: black;
-    margin-left: 9em;
-    font-size: 1.2em;
+    margin-left: 34em;
+    font-size: 5px;
     font-style: italic;
     font-weight: bold; }
 
-/* line 98, ../sass/screen.sass */
+/* line 99, ../sass/screen.sass */
 .link-box a {
   -moz-transition-property: all;
   -webkit-transition-property: all;
@@ -390,19 +391,19 @@ a.base, #wrapper #content a, #footer a {
   background-color: #222222;
   background-attachment: fixed;
   white-space: nowrap; }
-  /* line 113, ../sass/screen.sass */
+  /* line 114, ../sass/screen.sass */
   .link-box a[rel="external"]:after {
     content: " »"; }
-  /* line 115, ../sass/screen.sass */
+  /* line 116, ../sass/screen.sass */
   .link-box a:hover {
     color: white;
     background-color: #8b0006;
     padding-right: 85px; }
-  /* line 119, ../sass/screen.sass */
+  /* line 120, ../sass/screen.sass */
   .link-box a:last-child, .link-box a:last-child:hover {
     margin-right: 0; }
 
-/* line 125, ../sass/screen.sass */
+/* line 126, ../sass/screen.sass */
 .primary-column {
   display: inline;
   float: left;
@@ -414,7 +415,7 @@ a.base, #wrapper #content a, #footer a {
   * html .primary-column {
     overflow-x: hidden; }
 
-/* line 129, ../sass/screen.sass */
+/* line 130, ../sass/screen.sass */
 .secondary-column {
   display: inline;
   float: left;
@@ -424,24 +425,24 @@ a.base, #wrapper #content a, #footer a {
   * html .secondary-column {
     overflow-x: hidden; }
 
-/* line 134, ../sass/screen.sass */
+/* line 135, ../sass/screen.sass */
 .primary-column .block,
 .secondary-column .block {
   margin: 2em;
   border-top: 2px solid #222222; }
-  /* line 138, ../sass/screen.sass */
+  /* line 139, ../sass/screen.sass */
   #header .primary-column .block, #header
   .secondary-column .block {
     margin-bottom: 0;
     margin-top: 0;
     border: none; }
 
-/* line 150, ../sass/screen.sass */
+/* line 151, ../sass/screen.sass */
 #content .primary-column > .block,
 #content .secondary-column > .block {
   padding-top: 1.5em; }
 
-/* line 156, ../sass/screen.sass */
+/* line 157, ../sass/screen.sass */
 #footer {
   width: 950px;
   margin: 0 auto;
