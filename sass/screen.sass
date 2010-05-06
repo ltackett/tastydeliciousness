@@ -9,8 +9,12 @@
 // page defaults
 // --------------------------------------------------------
 
-html, html body
+body
   font-family: "Helvetica Neue", helvetica, arial, sans-serif
+
+#content span.amp
+  font-family: "Palatino Linotype", Constantia, Times, "Times New Roman", serif
+  font-style: italic
 
 body
   background: url(../images/mesh.png) #121212
@@ -34,7 +38,7 @@ a.base
     color: #CFD79E
     font-size: 90%
     
-    h1, h2, h3, h4, h5, h6
+    h3, h4, h5, h6
       +text-shadow(-2px, 2px, 20px, rgba(255,100,100,0.5))
       color: #852725
     
@@ -44,11 +48,38 @@ a.base
 // Link box
 // --------------------------------------------------------
 
+$animation-speed = "0.3s"
+$animation-ease = "ease-in-out"
+
 .link-box
   +display-box
   height: 100%
   width: 100%
   margin-top: 2.8em
+
+  a
+    +transition(all, $animation-speed, $animation-ease)
+    +border-top-left-radius(1em)
+    +border-bottom-right-radius(1em)
+    +box-flex(1)
+    display: block
+    color: #666
+    padding: 0.75em
+    vertical-align: 0
+    margin-right: 0.5em
+    text-decoration: none
+    background-image: url(../images/fabric.png)
+    background-color: #222
+    background-attachment: fixed
+    white-space: nowrap
+    &[rel="external"]:after
+      content: " »"
+    &:hover
+      color: #fff
+      background-color: #8B0006
+      padding-right: 85px
+    &:last-child, &:last-child:hover
+      margin-right: 0
 
 // Header
 // --------------------------------------------------------
@@ -92,33 +123,8 @@ a.base
       style: italic
       weight: bold
   
-$animation-speed = "0.3s"
-$animation-ease = "ease-in-out"
-
-.link-box
-  a
-    +transition(all, $animation-speed, $animation-ease)
-    +border-top-left-radius(1em)
-    +border-bottom-right-radius(1em)
-    +box-flex(1)
-    display: block
-    color: #666
-    padding: 0.75em
-    vertical-align: 0
-    margin-right: 0.5em
-    text-decoration: none
-    background-image: url(../images/fabric.png)
-    background-color: #222
-    background-attachment: fixed
-    white-space: nowrap
-    &[rel="external"]:after
-      content: " »"
-    &:hover
-      color: #fff
-      background-color: #8B0006
-      padding-right: 85px
-    &:last-child, &:last-child:hover
-      margin-right: 0
+    &:after
+      content: " Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo B-- o hai. =)"
 
 // Columns
 // --------------------------------------------------------
@@ -142,17 +148,36 @@ $animation-ease = "ease-in-out"
         top: 0
       border: none
 
-// Columns
+// Content
 // --------------------------------------------------------
 
 #content
-  background: url(../images/masthead.png) 0 0 no-repeat
-  margin-top: 1.5em
-  padding-top: 315px
+
+  #messagy-bit
+    position: relative
+    background: url(../images/masthead.png) 0 0 no-repeat
+    margin-top: 1.5em
+    min-height: 315px
+    
+    h2
+      position: absolute
+      top: 3em
+      left: 0.5em
+      margin: 0
+      line-height: 1em
+      letter-spacing: -0.05em
+      font:
+        size: 4em
+        weight: bold
+      
+    span.amp
+      color: #880006
+
+
   .primary-column,
   .secondary-column
     > .block
-      padding-top: 1.5em
+      padding-top: 0.5em
 
 // Footer
 // --------------------------------------------------------
