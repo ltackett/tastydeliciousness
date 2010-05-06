@@ -10,6 +10,13 @@
 // --------------------------------------------------------
 
 $accent: #880006
+$dusty-accent: #99201E
+$main-content: #CFD79E
+
+$darkest: #0c0c0c
+$dark: #444
+$midtone: #888
+$darkness-modifier: 10
 
 body
   font-family: "Helvetica Neue", arial, sans-serif
@@ -20,35 +27,56 @@ body
   font-weight: normal
 
 body
-  background: #222 url(../images/fabric.png)
+  background: $dark url(../images/fabric.png)
   
 a.base
-  color: #99201E
+  color: $dusty-accent
   text-decoration: none
   &:hover
     text-decoration: underline
 
 .block-base
   margin: 2em
-  border-top: 2px solid #222
+  border-top: 2px solid $dark
+
+.left-handle
+  width: 540px
+  border-left: 25px solid $dusty-accent
+  //background: $dusty-accent url(../images/diagonal_stripes_dark.png)
+  //padding-left: 25px
+
+#content
+  img
+    @extend .left-handle
+    width: 548px
+    padding-left: 2px
+  
+  blockquote, pre
+    @extend .left-handle
+    margin-left: 0
+    padding-left: 10px
 
 #wrapper
   +container
   +box-shadow(0, 0, 10px, rgba(0,0,0,1))
   +border-bottom-radius(0.5em)
-  border: 1px solid #222
-  background: #111
+  border: 1px solid $dark
+  background: $darkest
   
   #content
     overflow: hidden
-    color: #CFD79E
+    color: $main-content
     font-size: 90%
     
     h3, h4, h5, h6
       +text-shadow(-2px, 2px, 20px, rgba(100,0,0,0.5))
-      color: $accent
+      color: $dusty-accent
       display: inline-block
-      border-bottom: 1px dashed $accent
+    
+    h3
+      @extend .left-handle
+      width: auto
+      padding-left: 10px
     
     a
       @extend a.base
@@ -71,20 +99,19 @@ $animation-ease = "ease-in-out"
     +border-bottom-right-radius(1em)
     +box-flex(1)
     display: block
-    color: #666
+    color: $midtone
     padding: 0.75em
     vertical-align: 0
     margin-right: 0.5em
     text-decoration: none
     background-image: url(../images/fabric.png)
-    background-color: #1c1c1c
-    background-attachment: fixed
+    background-color: $darkest + $darkness-modifier
     white-space: nowrap
     &[rel="external"]:after
       content: " »"
     &:hover
       color: #fff
-      background-color: #8B0006
+      background-color: $accent
       padding-right: 85px
     &:last-child, &:last-child:hover
       margin-right: 0
@@ -100,7 +127,7 @@ $animation-ease = "ease-in-out"
   +border-bottom-radius(0.4em)
   padding-top: 1em
   margin: 0 2em
-  background: url(../images/fabric.png) #8B0006
+  background: url(../images/fabric.png) $accent
   #inner-logo
     +transform-origin(20%,50%)
     +apply-transform(scale(0.5) rotate(-5deg))
@@ -181,7 +208,7 @@ $animation-ease = "ease-in-out"
       
     span.amp
       +text-shadow(-2px, 2px, 2px, rgba(50,0,0,0.8))
-      color: #880006
+      color: $accent
 
 
   .columns
@@ -196,7 +223,7 @@ $animation-ease = "ease-in-out"
     
   .primary,
   .secondary
-    background: #171717
+    background: $darkest + $darkness-modifier
     padding-top: 0.2em
     padding-bottom: 0.5em
     > .block
@@ -209,8 +236,9 @@ $animation-ease = "ease-in-out"
 #footer
   +container
   margin: 2em auto
-  color: #666
+  color: $midtone
   font-size: 80%
   line-height: 2em
   a
     @extend a.base
+    color: $dusty-accent + 40
