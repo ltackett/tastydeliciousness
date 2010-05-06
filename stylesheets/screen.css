@@ -240,12 +240,12 @@ a.base, #wrapper #content a, #footer a {
 
 /* line 42, ../sass/screen.sass */
 .left-handle, #content img, #content blockquote, #content pre, #wrapper #content h3 {
-  width: 540px;
-  border-left: 25px solid #99201e; }
+  width: 542px;
+  border-left: 23px solid #99201e; }
 
 /* line 49, ../sass/screen.sass */
 #content img {
-  width: 548px;
+  width: 550px;
   padding-left: 2px; }
 /* line 54, ../sass/screen.sass */
 #content blockquote, #content pre {
