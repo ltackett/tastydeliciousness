@@ -10,14 +10,15 @@
 // --------------------------------------------------------
 
 body
-  font-family: "Helvetica Neue", helvetica, arial, sans-serif
+  font-family: "Helvetica Neue", arial, sans-serif
 
 #content span.amp
-  font-family: "Palatino Linotype", Constantia, Times, "Times New Roman", serif
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif
   font-style: italic
+  font-weight: normal
 
 body
-  background: url(../images/mesh.png) #121212
+  background: url(../images/mesh.png) #1c1c1c
   
 a.base
   color: #99201E
@@ -30,7 +31,7 @@ a.base
   +box-shadow(0, 0, 10px, rgba(0,0,0,1))
   +border-bottom-radius(0.5em)
   border: 1px solid #222
-  background: url(../images/fabric.png) #111
+  background: url(../images/fabric.png) #222
   padding-bottom: 2em
   
   #content
@@ -39,7 +40,7 @@ a.base
     font-size: 90%
     
     h3, h4, h5, h6
-      +text-shadow(-2px, 2px, 20px, rgba(255,100,100,0.5))
+      +text-shadow(-2px, 2px, 20px, rgba(100,0,0,0.5))
       color: #852725
     
     a
@@ -69,7 +70,7 @@ $animation-ease = "ease-in-out"
     margin-right: 0.5em
     text-decoration: none
     background-image: url(../images/fabric.png)
-    background-color: #222
+    background-color: #111
     background-attachment: fixed
     white-space: nowrap
     &[rel="external"]:after
@@ -154,6 +155,7 @@ $animation-ease = "ease-in-out"
 #content
 
   #messagy-bit
+    +box-shadow(0,0, 20px, #000)
     position: relative
     background: url(../images/masthead.png) 0 0 no-repeat
     margin-top: 1.5em
@@ -171,6 +173,7 @@ $animation-ease = "ease-in-out"
         weight: bold
       
     span.amp
+      +text-shadow(-2px, 2px, 2px, rgba(50,0,0,0.8))
       color: #880006
 
 
