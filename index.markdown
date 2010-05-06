@@ -37,3 +37,53 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         @extend .left-handle
         margin-left: 0
         padding-left: 10px
+
+Compass rocks
+
+#### A little compass magic
+    $animation-speed:  0.3s
+    $animation-ease: ease-in-out
+    
+    .link-box a
+      +transition(all, $animation-speed, $animation-ease)
+      +border-top-left-radius(1em)
+      +border-bottom-right-radius(1em)
+      +box-flex(1)
+
+#### ... goes a long way in the rendered CSS
+    .link-box a {
+      -moz-transition-property: all;
+      -webkit-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -moz-transition-duration: 0.3s;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -moz-transition-timing-function: ease-in-out;
+      -webkit-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+      border-top-left-radius: 1em;
+      -moz-border-radius-topleft: 1em;
+      -webkit-border-top-left-radius: 1em;
+      moz-border-radius-topleft: 1em;
+      -webkit-border-top-left-radius: 1em;
+      -o-border-top-left-radius: 1em;
+      -ms-border-top-left-radius: 1em;
+      -khtml-border-top-left-radius: 1em;
+      border-top-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+      -moz-border-radius-bottomright: 1em;
+      -webkit-border-bottom-right-radius: 1em;
+      -moz-border-radius-bottomright: 1em;
+      -webkit-border-bottom-right-radius: 1em;
+      -o-border-bottom-right-radius: 1em;
+      -ms-border-bottom-right-radius: 1em;
+      -khtml-border-bottom-right-radius: 1em;
+      border-bottom-right-radius: 1em;
+      -moz-box-flex: 1;
+      -webkit-box-flex: 1;
+      box-flex: 1;
+
+Which would you rather maintain?

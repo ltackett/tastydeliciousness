@@ -55,6 +55,9 @@ a.base
     @extend .left-handle
     margin-left: 0
     padding-left: 10px
+  
+  pre
+    color: #4E7840
 
 #wrapper
   +container
@@ -69,7 +72,6 @@ a.base
     font-size: 90%
     
     h3, h4, h5, h6
-      +text-shadow(-2px, 2px, 20px, rgba(100,0,0,0.5))
       color: $dusty-accent
       display: inline-block
     
@@ -84,8 +86,8 @@ a.base
 // Link box
 // --------------------------------------------------------
 
-$animation-speed = "0.3s"
-$animation-ease = "ease-in-out"
+$animation-speed:  0.3s
+$animation-ease: ease-in-out
 
 .link-box
   +display-box
