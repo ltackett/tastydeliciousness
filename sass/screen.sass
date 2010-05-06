@@ -11,7 +11,7 @@
 
 $accent: #880006
 $dusty-accent: #99201E
-$main-content: #CFD79E
+$main-content: #666
 
 $darkest: #0c0c0c
 $dark: #444
@@ -112,9 +112,11 @@ $animation-ease = "ease-in-out"
     &:hover
       color: #fff
       background-color: $accent
-      padding-right: 85px
+      .csstransitions &
+        padding-right: 85px
     &:last-child, &:last-child:hover
-      margin-right: 0
+      .csstransitions &
+        margin-right: 0
 
 // Header
 // --------------------------------------------------------
