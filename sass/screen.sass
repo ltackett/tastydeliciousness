@@ -9,6 +9,8 @@
 // page defaults
 // --------------------------------------------------------
 
+$accent: #880006
+
 body
   font-family: "Helvetica Neue", arial, sans-serif
 
@@ -44,7 +46,9 @@ a.base
     
     h3, h4, h5, h6
       +text-shadow(-2px, 2px, 20px, rgba(100,0,0,0.5))
-      color: #852725
+      color: $accent
+      display: inline-block
+      border-bottom: 1px dashed $accent
     
     a
       @extend a.base

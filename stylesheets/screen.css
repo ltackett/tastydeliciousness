@@ -209,36 +209,36 @@ a img {
   #content .loud {
     color: #111111; }
 
-/* line 12, ../sass/screen.sass */
+/* line 14, ../sass/screen.sass */
 body {
   font-family: "Helvetica Neue", arial, sans-serif; }
 
-/* line 15, ../sass/screen.sass */
+/* line 17, ../sass/screen.sass */
 #content span.amp {
   font-family: Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif;
   font-style: italic;
   font-weight: normal; }
 
-/* line 20, ../sass/screen.sass */
+/* line 22, ../sass/screen.sass */
 body {
   background: #222222 url(../images/fabric.png); }
 
-/* line 23, ../sass/screen.sass */
+/* line 25, ../sass/screen.sass */
 a.base, #wrapper #content a, #footer a {
   color: #99201e;
   text-decoration: none; }
-  /* line 26, ../sass/screen.sass */
+  /* line 28, ../sass/screen.sass */
   a.base:hover, #wrapper #content a:hover, #footer a:hover {
     text-decoration: underline; }
 
-/* line 29, ../sass/screen.sass */
+/* line 31, ../sass/screen.sass */
 .block-base, .primary-column .block,
 .secondary-column .block, #content .primary > .block,
 #content .secondary > .block {
   margin: 2em;
   border-top: 2px solid #222222; }
 
-/* line 33, ../sass/screen.sass */
+/* line 35, ../sass/screen.sass */
 #wrapper {
   width: 950px;
   margin: 0 auto;
@@ -271,17 +271,19 @@ a.base, #wrapper #content a, #footer a {
   /* line 8, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
   #wrapper {
     display: block; }
-  /* line 40, ../sass/screen.sass */
+  /* line 42, ../sass/screen.sass */
   #wrapper #content {
     overflow: hidden;
     color: #cfd79e;
     font-size: 90%; }
-    /* line 45, ../sass/screen.sass */
+    /* line 47, ../sass/screen.sass */
     #wrapper #content h3, #wrapper #content h4, #wrapper #content h5, #wrapper #content h6 {
       text-shadow: -2px 2px 20px rgba(100, 0, 0, 0.5);
-      color: #852725; }
+      color: #880006;
+      display: inline-block;
+      border-bottom: 1px dashed #880006; }
 
-/* line 58, ../sass/screen.sass */
+/* line 62, ../sass/screen.sass */
 .link-box {
   display: -moz-box;
   display: -webkit-box;
@@ -289,7 +291,7 @@ a.base, #wrapper #content a, #footer a {
   height: 100%;
   width: 100%;
   margin-top: 2.8em; }
-  /* line 64, ../sass/screen.sass */
+  /* line 68, ../sass/screen.sass */
   .link-box a {
     -moz-transition-property: all;
     -webkit-transition-property: all;
@@ -335,19 +337,19 @@ a.base, #wrapper #content a, #footer a {
     background-color: #1c1c1c;
     background-attachment: fixed;
     white-space: nowrap; }
-    /* line 79, ../sass/screen.sass */
+    /* line 83, ../sass/screen.sass */
     .link-box a[rel="external"]:after {
       content: " »"; }
-    /* line 81, ../sass/screen.sass */
+    /* line 85, ../sass/screen.sass */
     .link-box a:hover {
       color: white;
       background-color: #8b0006;
       padding-right: 85px; }
-    /* line 85, ../sass/screen.sass */
+    /* line 89, ../sass/screen.sass */
     .link-box a:last-child, .link-box a:last-child:hover {
       margin-right: 0; }
 
-/* line 91, ../sass/screen.sass */
+/* line 95, ../sass/screen.sass */
 #header {
   overflow: hidden;
   display: inline-block;
@@ -356,7 +358,7 @@ a.base, #wrapper #content a, #footer a {
   #header {
     display: block; }
 
-/* line 95, ../sass/screen.sass */
+/* line 99, ../sass/screen.sass */
 #logo {
   border-bottom-left-radius: 0.4em;
   -moz-border-radius-bottomleft: 0.4em;
@@ -379,7 +381,7 @@ a.base, #wrapper #content a, #footer a {
   padding-top: 1em;
   margin: 0 2em;
   background: url(../images/fabric.png) #8b0006; }
-  /* line 100, ../sass/screen.sass */
+  /* line 104, ../sass/screen.sass */
   #logo #inner-logo {
     -moz-transform-origin: 20% 50%;
     -webkit-transform-origin: 20% 50%;
@@ -390,10 +392,10 @@ a.base, #wrapper #content a, #footer a {
     -o-transform: scale(0.5) rotate(-5deg);
     transform: scale(0.5) rotate(-5deg);
     width: 28em; }
-    /* line 104, ../sass/screen.sass */
+    /* line 108, ../sass/screen.sass */
     .csstransforms #logo #inner-logo {
       margin-left: -2em; }
-  /* line 108, ../sass/screen.sass */
+  /* line 112, ../sass/screen.sass */
   #logo h1 {
     text-shadow: -0.04em 0.04em 0.04em rgba(255, 100, 100, 0.8);
     letter-spacing: -0.07em;
@@ -402,22 +404,22 @@ a.base, #wrapper #content a, #footer a {
     font-size: 4em;
     font-weight: bold;
     font-style: italic; }
-    /* line 117, ../sass/screen.sass */
+    /* line 121, ../sass/screen.sass */
     #logo h1 a {
       color: white;
       text-decoration: none; }
-  /* line 121, ../sass/screen.sass */
+  /* line 125, ../sass/screen.sass */
   #logo p {
     color: black;
     margin-left: 34em;
     font-size: 5px;
     font-style: italic;
     font-weight: bold; }
-    /* line 130, ../sass/screen.sass */
+    /* line 134, ../sass/screen.sass */
     #logo p:after {
       content: " Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo B-- o hai. =)"; }
 
-/* line 136, ../sass/screen.sass */
+/* line 140, ../sass/screen.sass */
 .primary-column {
   display: inline;
   float: left;
@@ -429,7 +431,7 @@ a.base, #wrapper #content a, #footer a {
   * html .primary-column {
     overflow-x: hidden; }
 
-/* line 140, ../sass/screen.sass */
+/* line 144, ../sass/screen.sass */
 .secondary-column {
   display: inline;
   float: left;
@@ -439,14 +441,14 @@ a.base, #wrapper #content a, #footer a {
   * html .secondary-column {
     overflow-x: hidden; }
 
-/* line 148, ../sass/screen.sass */
+/* line 152, ../sass/screen.sass */
 #header .primary-column .block, #header
 .secondary-column .block {
   margin-bottom: 0;
   margin-top: 0;
   border: none; }
 
-/* line 159, ../sass/screen.sass */
+/* line 163, ../sass/screen.sass */
 #content #messagy-bit {
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
@@ -456,7 +458,7 @@ a.base, #wrapper #content a, #footer a {
   background: url(../images/masthead.png) 0 0 no-repeat;
   margin-top: 1.5em;
   min-height: 315px; }
-  /* line 166, ../sass/screen.sass */
+  /* line 170, ../sass/screen.sass */
   #content #messagy-bit h2 {
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
     position: absolute;
@@ -467,34 +469,34 @@ a.base, #wrapper #content a, #footer a {
     letter-spacing: -0.05em;
     font-size: 4em;
     font-weight: bold; }
-  /* line 178, ../sass/screen.sass */
+  /* line 182, ../sass/screen.sass */
   #content #messagy-bit span.amp {
     text-shadow: -2px 2px 2px rgba(50, 0, 0, 0.8);
     color: #880006; }
-/* line 183, ../sass/screen.sass */
+/* line 187, ../sass/screen.sass */
 #content .columns {
   display: -moz-box;
   display: -webkit-box;
   display: box; }
-/* line 186, ../sass/screen.sass */
+/* line 190, ../sass/screen.sass */
 #content .primary {
   width: 630px; }
-/* line 189, ../sass/screen.sass */
+/* line 193, ../sass/screen.sass */
 #content .secondary {
   width: 310px;
   margin-right: 10px; }
-/* line 193, ../sass/screen.sass */
+/* line 197, ../sass/screen.sass */
 #content .primary,
 #content .secondary {
   background: #171717;
   padding-top: 0.2em;
   padding-bottom: 0.5em; }
-  /* line 198, ../sass/screen.sass */
+  /* line 202, ../sass/screen.sass */
   #content .primary > .block,
   #content .secondary > .block {
     padding-top: 0.5em; }
 
-/* line 205, ../sass/screen.sass */
+/* line 209, ../sass/screen.sass */
 #footer {
   width: 950px;
   margin: 0 auto;
