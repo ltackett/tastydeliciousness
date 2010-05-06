@@ -457,7 +457,7 @@ a.base, #wrapper #content a, #footer a {
   min-height: 315px; }
   /* line 164, ../sass/screen.sass */
   #content #messagy-bit h2 {
-    text-shadow: 0 0 2px white;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
     position: absolute;
     top: 3em;
     left: 0.5em;
