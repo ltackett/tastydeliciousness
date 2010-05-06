@@ -28,7 +28,7 @@ body
 
 body
   background: $dark url(../images/fabric.png)
-  
+
 a.base
   color: $dusty-accent
   text-decoration: none
@@ -129,16 +129,15 @@ $animation-ease: ease-in-out
 
 #logo
   +border-bottom-radius(0.4em)
-  padding-top: 1em
   margin: 0 2em
   background: url(../images/fabric.png) $accent
+  height: 5.4em
   #inner-logo
     +transform-origin(20%,50%)
-    +apply-transform(scale(0.5) rotate(-5deg))
-    width: 28em
-    .csstransforms &
-      margin:
-        left: -2em
+    +apply-transform(scale(1) rotate(-5deg))
+    width: 13.5em
+    margin: 0 auto
+    padding-top: 2em
 
   h1
     +text-shadow(-0.04em, 0.04em, 0.04em, rgba(255,100,100,0.8))
@@ -146,7 +145,7 @@ $animation-ease: ease-in-out
     margin-bottom: 0
     font:
       family: georgia, times, "times new roman", serif
-      size: 4em
+      size: 1.95em
       weight: bold
       style: italic
     a
@@ -156,9 +155,9 @@ $animation-ease: ease-in-out
   p
     color: #000
     margin:
-      left: 34em
+      left: 41em
     font:
-      size: 5px
+      size: 2px
       style: italic
       weight: bold
   
@@ -168,12 +167,37 @@ $animation-ease: ease-in-out
 // Columns
 // --------------------------------------------------------
 
-.primary-column
-  +column(16, true)
-  +float-right
+.two-col
+  +display-box
+  
+  .primary,
+  .primary-column
+    width: ($blueprint_grid_outer_width * 16 - $blueprint_grid_margin)
+    
+  .secondary,
+  .secondary-column
+    width: ($blueprint_grid_outer_width * 8 - $blueprint_grid_margin)
+    margin-right: 10px
 
-.secondary-column
-  +column(8)
+#header, .columns
+  @extend .two-col
+
+#header
+  .primary-column .block
+    +box-align(end)
+    +experimental-value(display, inline-box)
+    &, & .link-box
+      width: 575px
+
+.columns
+  .primary,
+  .secondary
+    background: $darkest + $darkness-modifier
+    padding-top: 0.2em
+    padding-bottom: 0.5em
+    > .block
+      @extend .block-base
+      padding-top: 0.5em
 
 .primary-column,
 .secondary-column
@@ -213,26 +237,6 @@ $animation-ease: ease-in-out
     span.amp
       +text-shadow(-2px, 2px, 2px, rgba(50,0,0,0.8))
       color: $accent
-
-
-  .columns
-    +display-box
-  
-  .primary
-    width: ($blueprint_grid_outer_width * 16 - $blueprint_grid_margin)
-
-  .secondary
-    width: ($blueprint_grid_outer_width * 8 - $blueprint_grid_margin)
-    margin-right: 10px
-    
-  .primary,
-  .secondary
-    background: $darkest + $darkness-modifier
-    padding-top: 0.2em
-    padding-bottom: 0.5em
-    > .block
-      @extend .block-base
-      padding-top: 0.5em
 
 // Footer
 // --------------------------------------------------------

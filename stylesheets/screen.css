@@ -232,9 +232,9 @@ a.base, #wrapper #content a, #footer a {
     text-decoration: underline; }
 
 /* line 38, ../sass/screen.sass */
-.block-base, .primary-column .block,
-.secondary-column .block, #content .primary > .block,
-#content .secondary > .block {
+.block-base, .columns .primary > .block,
+.columns .secondary > .block, .primary-column .block,
+.secondary-column .block {
   margin: 2em;
   border-top: 2px solid #444444; }
 
@@ -398,77 +398,99 @@ a.base, #wrapper #content a, #footer a {
   -ms-border-bottom-right-radius: 0.4em;
   -khtml-border-bottom-right-radius: 0.4em;
   border-bottom-right-radius: 0.4em;
-  padding-top: 1em;
   margin: 0 2em;
-  background: url(../images/fabric.png) #880006; }
+  background: url(../images/fabric.png) #880006;
+  height: 5.4em; }
   /* line 135, ../sass/screen.sass */
   #logo #inner-logo {
     -moz-transform-origin: 20% 50%;
     -webkit-transform-origin: 20% 50%;
     -o-transform-origin: 20% 50%;
     transform-origin: 20% 50%;
-    -moz-transform: scale(0.5) rotate(-5deg);
-    -webkit-transform: scale(0.5) rotate(-5deg);
-    -o-transform: scale(0.5) rotate(-5deg);
-    transform: scale(0.5) rotate(-5deg);
-    width: 28em; }
-    /* line 139, ../sass/screen.sass */
-    .csstransforms #logo #inner-logo {
-      margin-left: -2em; }
-  /* line 143, ../sass/screen.sass */
+    -moz-transform: scale(1) rotate(-5deg);
+    -webkit-transform: scale(1) rotate(-5deg);
+    -o-transform: scale(1) rotate(-5deg);
+    transform: scale(1) rotate(-5deg);
+    width: 13.5em;
+    margin: 0 auto;
+    padding-top: 2em; }
+  /* line 142, ../sass/screen.sass */
   #logo h1 {
     text-shadow: -0.04em 0.04em 0.04em rgba(255, 100, 100, 0.8);
     letter-spacing: -0.07em;
     margin-bottom: 0;
     font-family: georgia, times, "times new roman", serif;
-    font-size: 4em;
+    font-size: 1.95em;
     font-weight: bold;
     font-style: italic; }
-    /* line 152, ../sass/screen.sass */
+    /* line 151, ../sass/screen.sass */
     #logo h1 a {
       color: white;
       text-decoration: none; }
-  /* line 156, ../sass/screen.sass */
+  /* line 155, ../sass/screen.sass */
   #logo p {
     color: black;
-    margin-left: 34em;
-    font-size: 5px;
+    margin-left: 41em;
+    font-size: 2px;
     font-style: italic;
     font-weight: bold; }
-    /* line 165, ../sass/screen.sass */
+    /* line 164, ../sass/screen.sass */
     #logo p:after {
       content: " Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo B-- o hai. =)"; }
 
-/* line 171, ../sass/screen.sass */
-.primary-column {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 630px;
-  display: inline;
-  float: right; }
-  /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-  * html .primary-column {
-    overflow-x: hidden; }
+/* line 170, ../sass/screen.sass */
+.two-col, #header, .columns {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box; }
+  /* line 173, ../sass/screen.sass */
+  .two-col .primary, #header .primary, .columns .primary,
+  .two-col .primary-column,
+  #header .primary-column,
+  .columns .primary-column {
+    width: 630px; }
+  /* line 177, ../sass/screen.sass */
+  .two-col .secondary, #header .secondary, .columns .secondary,
+  .two-col .secondary-column,
+  #header .secondary-column,
+  .columns .secondary-column {
+    width: 310px;
+    margin-right: 10px; }
 
-/* line 175, ../sass/screen.sass */
-.secondary-column {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 310px; }
-  /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-  * html .secondary-column {
-    overflow-x: hidden; }
+/* line 186, ../sass/screen.sass */
+#header .primary-column .block {
+  -moz-box-align: end;
+  -webkit-box-align: end;
+  box-align: end;
+  display: -moz-inline-box;
+  display: -webkit-inline-box;
+  display: -o-inline-box;
+  display: -ms-inline-box;
+  display: -khtml-inline-box;
+  display: inline-box; }
+  /* line 189, ../sass/screen.sass */
+  #header .primary-column .block, #header .primary-column .block .link-box {
+    width: 575px; }
 
-/* line 183, ../sass/screen.sass */
+/* line 193, ../sass/screen.sass */
+.columns .primary,
+.columns .secondary {
+  background: #161616;
+  padding-top: 0.2em;
+  padding-bottom: 0.5em; }
+  /* line 198, ../sass/screen.sass */
+  .columns .primary > .block,
+  .columns .secondary > .block {
+    padding-top: 0.5em; }
+
+/* line 207, ../sass/screen.sass */
 #header .primary-column .block, #header
 .secondary-column .block {
   margin-bottom: 0;
   margin-top: 0;
   border: none; }
 
-/* line 194, ../sass/screen.sass */
+/* line 218, ../sass/screen.sass */
 #content #messagy-bit {
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
@@ -478,7 +500,7 @@ a.base, #wrapper #content a, #footer a {
   background: url(../images/masthead.png) 0 0 no-repeat;
   margin-top: 1.5em;
   min-height: 315px; }
-  /* line 201, ../sass/screen.sass */
+  /* line 225, ../sass/screen.sass */
   #content #messagy-bit h2 {
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
     position: absolute;
@@ -489,34 +511,12 @@ a.base, #wrapper #content a, #footer a {
     letter-spacing: -0.05em;
     font-size: 4em;
     font-weight: bold; }
-  /* line 213, ../sass/screen.sass */
+  /* line 237, ../sass/screen.sass */
   #content #messagy-bit span.amp {
     text-shadow: -2px 2px 2px rgba(50, 0, 0, 0.8);
     color: #880006; }
-/* line 218, ../sass/screen.sass */
-#content .columns {
-  display: -moz-box;
-  display: -webkit-box;
-  display: box; }
-/* line 221, ../sass/screen.sass */
-#content .primary {
-  width: 630px; }
-/* line 224, ../sass/screen.sass */
-#content .secondary {
-  width: 310px;
-  margin-right: 10px; }
-/* line 228, ../sass/screen.sass */
-#content .primary,
-#content .secondary {
-  background: #161616;
-  padding-top: 0.2em;
-  padding-bottom: 0.5em; }
-  /* line 233, ../sass/screen.sass */
-  #content .primary > .block,
-  #content .secondary > .block {
-    padding-top: 0.5em; }
 
-/* line 240, ../sass/screen.sass */
+/* line 244, ../sass/screen.sass */
 #footer {
   width: 950px;
   margin: 0 auto;
@@ -529,6 +529,6 @@ a.base, #wrapper #content a, #footer a {
   /* line 8, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
   #footer {
     display: block; }
-  /* line 246, ../sass/screen.sass */
+  /* line 250, ../sass/screen.sass */
   #footer a {
     color: #c14846; }
