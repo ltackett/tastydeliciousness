@@ -457,6 +457,7 @@ a.base, #wrapper #content a, #footer a {
   min-height: 315px; }
   /* line 164, ../sass/screen.sass */
   #content #messagy-bit h2 {
+    text-shadow: 0 0 2px white;
     position: absolute;
     top: 3em;
     left: 0.5em;
@@ -465,16 +466,16 @@ a.base, #wrapper #content a, #footer a {
     letter-spacing: -0.05em;
     font-size: 4em;
     font-weight: bold; }
-  /* line 175, ../sass/screen.sass */
+  /* line 176, ../sass/screen.sass */
   #content #messagy-bit span.amp {
     text-shadow: -2px 2px 2px rgba(50, 0, 0, 0.8);
     color: #880006; }
-/* line 182, ../sass/screen.sass */
+/* line 183, ../sass/screen.sass */
 #content .primary-column > .block,
 #content .secondary-column > .block {
   padding-top: 0.5em; }
 
-/* line 188, ../sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 #footer {
   width: 950px;
   margin: 0 auto;
