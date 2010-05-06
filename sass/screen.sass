@@ -18,7 +18,7 @@ body
   font-weight: normal
 
 body
-  background: url(../images/mesh.png) #1c1c1c
+  background: #222 url(../images/fabric.png)
   
 a.base
   color: #99201E
@@ -31,8 +31,7 @@ a.base
   +box-shadow(0, 0, 10px, rgba(0,0,0,1))
   +border-bottom-radius(0.5em)
   border: 1px solid #222
-  background: url(../images/fabric.png) #222
-  padding-bottom: 2em
+  background: #111
   
   #content
     overflow: hidden
@@ -70,7 +69,7 @@ $animation-ease = "ease-in-out"
     margin-right: 0.5em
     text-decoration: none
     background-image: url(../images/fabric.png)
-    background-color: #111
+    background-color: #1c1c1c
     background-attachment: fixed
     white-space: nowrap
     &[rel="external"]:after
@@ -180,6 +179,7 @@ $animation-ease = "ease-in-out"
 
   .primary-column,
   .secondary-column
+    background: #171717
     > .block
       padding-top: 0.5em
 

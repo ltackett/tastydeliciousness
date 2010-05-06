@@ -221,7 +221,7 @@ body {
 
 /* line 20, ../sass/screen.sass */
 body {
-  background: url(../images/mesh.png) #1c1c1c; }
+  background: #222222 url(../images/fabric.png); }
 
 /* line 23, ../sass/screen.sass */
 a.base, #wrapper #content a, #footer a {
@@ -260,22 +260,21 @@ a.base, #wrapper #content a, #footer a {
   -khtml-border-bottom-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   border: 1px solid #222222;
-  background: url(../images/fabric.png) #222222;
-  padding-bottom: 2em; }
+  background: #111111; }
   /* line 8, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
   #wrapper {
     display: block; }
-  /* line 37, ../sass/screen.sass */
+  /* line 36, ../sass/screen.sass */
   #wrapper #content {
     overflow: hidden;
     color: #cfd79e;
     font-size: 90%; }
-    /* line 42, ../sass/screen.sass */
+    /* line 41, ../sass/screen.sass */
     #wrapper #content h3, #wrapper #content h4, #wrapper #content h5, #wrapper #content h6 {
       text-shadow: -2px 2px 20px rgba(100, 0, 0, 0.5);
       color: #852725; }
 
-/* line 55, ../sass/screen.sass */
+/* line 54, ../sass/screen.sass */
 .link-box {
   display: -moz-box;
   display: -webkit-box;
@@ -283,7 +282,7 @@ a.base, #wrapper #content a, #footer a {
   height: 100%;
   width: 100%;
   margin-top: 2.8em; }
-  /* line 61, ../sass/screen.sass */
+  /* line 60, ../sass/screen.sass */
   .link-box a {
     -moz-transition-property: all;
     -webkit-transition-property: all;
@@ -326,22 +325,22 @@ a.base, #wrapper #content a, #footer a {
     margin-right: 0.5em;
     text-decoration: none;
     background-image: url(../images/fabric.png);
-    background-color: #111111;
+    background-color: #1c1c1c;
     background-attachment: fixed;
     white-space: nowrap; }
-    /* line 76, ../sass/screen.sass */
+    /* line 75, ../sass/screen.sass */
     .link-box a[rel="external"]:after {
       content: " »"; }
-    /* line 78, ../sass/screen.sass */
+    /* line 77, ../sass/screen.sass */
     .link-box a:hover {
       color: white;
       background-color: #8b0006;
       padding-right: 85px; }
-    /* line 82, ../sass/screen.sass */
+    /* line 81, ../sass/screen.sass */
     .link-box a:last-child, .link-box a:last-child:hover {
       margin-right: 0; }
 
-/* line 88, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 #header {
   overflow: hidden;
   display: inline-block;
@@ -350,7 +349,7 @@ a.base, #wrapper #content a, #footer a {
   #header {
     display: block; }
 
-/* line 92, ../sass/screen.sass */
+/* line 91, ../sass/screen.sass */
 #logo {
   border-bottom-left-radius: 0.4em;
   -moz-border-radius-bottomleft: 0.4em;
@@ -373,7 +372,7 @@ a.base, #wrapper #content a, #footer a {
   padding-top: 1em;
   margin: 0 2em;
   background: url(../images/fabric.png) #8b0006; }
-  /* line 97, ../sass/screen.sass */
+  /* line 96, ../sass/screen.sass */
   #logo #inner-logo {
     -moz-transform-origin: 20% 50%;
     -webkit-transform-origin: 20% 50%;
@@ -384,10 +383,10 @@ a.base, #wrapper #content a, #footer a {
     -o-transform: scale(0.5) rotate(-5deg);
     transform: scale(0.5) rotate(-5deg);
     width: 28em; }
-    /* line 101, ../sass/screen.sass */
+    /* line 100, ../sass/screen.sass */
     .csstransforms #logo #inner-logo {
       margin-left: -2em; }
-  /* line 105, ../sass/screen.sass */
+  /* line 104, ../sass/screen.sass */
   #logo h1 {
     text-shadow: -0.04em 0.04em 0.04em rgba(255, 100, 100, 0.8);
     letter-spacing: -0.07em;
@@ -396,22 +395,22 @@ a.base, #wrapper #content a, #footer a {
     font-size: 4em;
     font-weight: bold;
     font-style: italic; }
-    /* line 114, ../sass/screen.sass */
+    /* line 113, ../sass/screen.sass */
     #logo h1 a {
       color: white;
       text-decoration: none; }
-  /* line 118, ../sass/screen.sass */
+  /* line 117, ../sass/screen.sass */
   #logo p {
     color: black;
     margin-left: 34em;
     font-size: 5px;
     font-style: italic;
     font-weight: bold; }
-    /* line 127, ../sass/screen.sass */
+    /* line 126, ../sass/screen.sass */
     #logo p:after {
       content: " Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo Bar Baz. Foo B-- o hai. =)"; }
 
-/* line 133, ../sass/screen.sass */
+/* line 132, ../sass/screen.sass */
 .primary-column {
   display: inline;
   float: left;
@@ -423,7 +422,7 @@ a.base, #wrapper #content a, #footer a {
   * html .primary-column {
     overflow-x: hidden; }
 
-/* line 137, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 .secondary-column {
   display: inline;
   float: left;
@@ -433,19 +432,19 @@ a.base, #wrapper #content a, #footer a {
   * html .secondary-column {
     overflow-x: hidden; }
 
-/* line 142, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
 .primary-column .block,
 .secondary-column .block {
   margin: 2em;
   border-top: 2px solid #222222; }
-  /* line 146, ../sass/screen.sass */
+  /* line 145, ../sass/screen.sass */
   #header .primary-column .block, #header
   .secondary-column .block {
     margin-bottom: 0;
     margin-top: 0;
     border: none; }
 
-/* line 157, ../sass/screen.sass */
+/* line 156, ../sass/screen.sass */
 #content #messagy-bit {
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
@@ -455,7 +454,7 @@ a.base, #wrapper #content a, #footer a {
   background: url(../images/masthead.png) 0 0 no-repeat;
   margin-top: 1.5em;
   min-height: 315px; }
-  /* line 164, ../sass/screen.sass */
+  /* line 163, ../sass/screen.sass */
   #content #messagy-bit h2 {
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
     position: absolute;
@@ -466,14 +465,18 @@ a.base, #wrapper #content a, #footer a {
     letter-spacing: -0.05em;
     font-size: 4em;
     font-weight: bold; }
-  /* line 176, ../sass/screen.sass */
+  /* line 175, ../sass/screen.sass */
   #content #messagy-bit span.amp {
     text-shadow: -2px 2px 2px rgba(50, 0, 0, 0.8);
     color: #880006; }
-/* line 183, ../sass/screen.sass */
-#content .primary-column > .block,
-#content .secondary-column > .block {
-  padding-top: 0.5em; }
+/* line 180, ../sass/screen.sass */
+#content .primary-column,
+#content .secondary-column {
+  background: #171717; }
+  /* line 183, ../sass/screen.sass */
+  #content .primary-column > .block,
+  #content .secondary-column > .block {
+    padding-top: 0.5em; }
 
 /* line 189, ../sass/screen.sass */
 #footer {

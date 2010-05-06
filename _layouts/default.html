@@ -15,17 +15,37 @@
     </script>
     
     <script type="text/javascript">
-        // Make with the jQuery
         
+        function equalHeight(group) {
+            tallest = 0;
+            group.each(function() {
+                thisHeight = $(this).height();
+                if(thisHeight > tallest) {
+                    tallest = thisHeight;
+                }
+            });
+            group.height(tallest);
+        }
+        
+        // Make with the jQuery
         $(document).ready(function(){
+            
+            // if there aren't any images on the page, even out the height
+            if (!$('img').size() != 0){
+                equalHeight($("#content > div.primary-column, #content > div.secondary-column"));
+            }
+            
+            // if there are images on the page, even out the height with each image load.
+            else {
+                $('img').bind('load', function(){
+                    equalHeight($("#content > div.primary-column, #content > div.secondary-column"));
+                })
+            }
             
             $('a[rel=external]').click(function(){
                 this.target = "_blank";
             });
             
-            $('.link-box a').hover(function(){
-                $('.link-box a').not(this).toggleClass('not-hover');
-            });
         });
     </script>
 
