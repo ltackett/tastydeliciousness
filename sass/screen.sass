@@ -26,6 +26,10 @@ a.base
   &:hover
     text-decoration: underline
 
+.block-base
+  margin: 2em
+  border-top: 2px solid #222
+
 #wrapper
   +container
   +box-shadow(0, 0, 10px, rgba(0,0,0,1))
@@ -139,8 +143,7 @@ $animation-ease = "ease-in-out"
 .primary-column,
 .secondary-column
   .block
-    margin: 2em
-    border-top: 2px solid #222
+    @extend .block-base
   
     #header &
       margin:
@@ -177,10 +180,23 @@ $animation-ease = "ease-in-out"
       color: #880006
 
 
-  .primary-column,
-  .secondary-column
+  .columns
+    +display-box
+  
+  .primary
+    width: 630px
+
+  .secondary
+    width: 310px
+    margin-right: 10px
+    
+  .primary,
+  .secondary
     background: #171717
+    padding-top: 0.2em
+    padding-bottom: 0.5em
     > .block
+      @extend .block-base
       padding-top: 0.5em
 
 // Footer
